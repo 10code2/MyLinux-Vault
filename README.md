@@ -1,7 +1,7 @@
 # Linux 学习笔记库
 
 > 个人 Linux / nginx 运维学习笔记 · Obsidian 知识库
-> 本地路径：`D:\Obsidian\Linux` · 同步仓库：github.com/10code2
+> 本地路径：`D:\Obsidian\Linux` · 同步仓库：github.com/10code2/MyLinux-Vault
 
 ## 📁 目录结构
 
@@ -33,7 +33,7 @@
 git init
 git add .
 git commit -m "init"
-git remote add origin https://github.com/10code2/linux-notes.git
+git remote add origin git@github.com:10code2/MyLinux-Vault.git
 git push -u origin main
 
 # 日常更新（一条链）
