@@ -1,4 +1,4 @@
-# nginx 负载均衡学习笔记（upstream）
+
 
 > 环境：WSL 2 Debian + nginx 1.26.3 · 三个 python 后端（9000/9001/9002）
 > 日期：2026-10-08
@@ -83,6 +83,15 @@ server {
 载：service nginx reload（或 nginx -s reload）
 验：curl 访问看分布
 ```
+
+### Nginx 内置算法：
+
+1. **轮询（round-robin）**—— 默认，轮流分配
+2. **加权轮询（weight）**——`server x weight=3`，性能好的多分
+3. **ip_hash**—— 按客户端 IP 哈希，同一用户固定到同一后端，**解决 session 保持问题**
+4. **least_conn**—— 优先发给当前连接数最少的后端
+
+第三方模块还有 fair（响应时间）、url_hash。
 
 ---
 

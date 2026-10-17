@@ -20,6 +20,7 @@
                        ├─ /private   → IP白名单 + Basic Auth（.htpasswd）
                        ├─ 全局限流    → limit_req rate=1r/s burst=5 nodelay
                        └─ 访问日志    → 自定义格式（含 upstream_addr / request_time）
+                    
 ```
 
 ### 端口清单
