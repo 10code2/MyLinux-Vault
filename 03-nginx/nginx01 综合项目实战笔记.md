@@ -1,3 +1,11 @@
+---
+title: nginx01 综合项目实战笔记
+created: 2026-10-16
+updated: 2026-10-24
+status: 待复习
+tags: [nginx, web服务]
+---
+
 # nginx01 综合项目实战笔记
 
 > 定位：把零散的 nginx 知识（静态托管/反向代理/负载均衡/HTTPS/安全）整合成完整站点，新增日志分析与故障演练
@@ -284,3 +292,10 @@ upstream backend_pool {
 | 单后端挂了无 502 | 预期 502 实际全 200 | proxy_next_upstream 默认自动重试下一个后端 | 正常现象；全挂才 502 |
 | 快速请求出现 503 | 第 7 次起 503 | limit_req rate=1r/s + burst=5，第 7 次超配额 | 正常现象；调大 rate/burst |
 | sites-enabled 垃圾文件 | 目录里有 curl/done 0 字节文件 | 之前误操作重定向创建 | rm 清理 |
+
+## 🔗 相关笔记
+
+- [[nginx-静态网页学习笔记]]
+- [[nginx-负载均衡学习笔记]]
+- [[nginx-HTTPS学习笔记]]
+- [[nginx排障复盘]]

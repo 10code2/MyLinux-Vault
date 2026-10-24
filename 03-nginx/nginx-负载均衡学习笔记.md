@@ -1,3 +1,11 @@
+---
+title: nginx-负载均衡学习笔记
+created: 2026-10-17
+updated: 2026-10-24
+status: 待复习
+tags: [nginx, web服务]
+---
+
 
 
 > 环境：WSL 2 Debian + nginx 1.26.3 · 三个 python 后端（9000/9001/9002）
@@ -253,3 +261,8 @@ upstream = 后端名单，轮流分发。
 验证 = 日志里的 $upstream_addr（每单发给谁）。
 铁律 = 名单只写真后端；故障看错误日志的 upstream 地址。
 ```
+
+## 🔗 相关笔记
+
+- [[nginx-HTTPS学习笔记]]
+- [[nginx01 综合项目实战笔记]]

@@ -1,3 +1,11 @@
+---
+title: nginx-静态网页学习笔记
+created: 2026-10-07
+updated: 2026-10-24
+status: 待复习
+tags: [nginx, web服务]
+---
+
 # nginx 静态网页与配置 学习笔记
 
 > 环境：WSL 2（Debian 13）· nginx 1.26.3 · 本机 Windows 访问 http://localhost:8080
@@ -217,3 +225,8 @@ HTTPS               ssl + return 301
 ```
 
 **生产里 80% 时间就靠这几个规则**：`proxy_pass`、`upstream`、`ssl_certificate`、`limit_req`、`gzip/expires`。
+
+## 🔗 相关笔记
+
+- [[nginx01 综合项目实战笔记]]
+- [[nginx-负载均衡学习笔记]]

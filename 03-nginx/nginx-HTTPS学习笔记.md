@@ -1,3 +1,11 @@
+---
+title: nginx-HTTPS学习笔记
+created: 2026-10-08
+updated: 2026-10-24
+status: 待复习
+tags: [nginx, web服务]
+---
+
 # nginx HTTPS 学习笔记
 
 > 环境：WSL 2 Debian + nginx 1.26.3 · 自签名证书（本机学习用）
@@ -220,3 +228,7 @@ HTTP 入口用 return 301 全部踢到 HTTPS（生产标配）。
 学习用自签名（浏览器警告正常），生产用 certbot 申请受信任证书。
 后端永远不能直接暴露给用户 —— 入口只留 nginx。
 ```
+
+## 🔗 相关笔记
+
+- [[nginx-负载均衡学习笔记]]

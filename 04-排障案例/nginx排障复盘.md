@@ -1,3 +1,11 @@
+---
+title: nginx排障复盘
+created: 2026-10-07
+updated: 2026-10-24
+status: 待复习
+tags: [排障, 复盘]
+---
+
 # nginx 使用排障复盘（WSL 2 环境）
 
 > 环境：Windows 10 专业工作站版 19045・WSL 3.0.1.0（MSI 版）・Debian 13 (trixie)・nginx 1.26.3
@@ -321,3 +329,10 @@ service nginx reload               # 重载配置（改配置后）
 nginx -t                           # 测试配置语法
 tail -f /var/log/nginx/mysite_access.log   # 实时查看访问日志
 ```
+
+## 🔗 相关笔记
+
+- [[nginx-502故障排查笔记]]
+- [[nginx-504 排查逻辑]]
+- [[Linux常见故障排障方法]]
+- [[nginx01 综合项目实战笔记]]

@@ -1,0 +1,7 @@
+# 所有文本文件按内容自动判断
+* text=auto
+
+# Markdown 和 shell 脚本强制 LF（避免脚本在 Linux 上报错）
+*.md  text eol=lf
+*.sh  text eol=lf
+*.py  text eol=lf

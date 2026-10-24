@@ -1,3 +1,11 @@
+---
+title: nginx-504 排查逻辑
+created: 2026-10-17
+updated: 2026-10-24
+status: 待复习
+tags: [nginx, web服务]
+---
+
 
 ## 一、先讲核心：为什么 504 要查后端日志和响应时间？
 
@@ -106,3 +114,8 @@ awk '{print $7, $NF}' access.log | sort -k2 -rn | head -10
 1. ❌ 误区：504 是 Nginx 出问题了 ✅ 纠正：绝大多数 504 根因都在后端，Nginx 只是超时保护，避免请求无限挂起。
 2. ❌ 误区：`$request_time` 就是后端处理时间 ✅ 纠正：`$request_time` 包含用户网络传输、后端处理、Nginx 转发全部时间；纯后端耗时看 `$upstream_response_time`。
 3. ❌ 误区：504 一定是后端程序 bug ✅ 纠正：也可能是服务器资源耗尽（CPU、内存、磁盘打满），或者数据库、缓存等依赖服务慢。
+
+## 🔗 相关笔记
+
+- [[nginx-502故障排查笔记]]
+- [[nginx排障复盘]]

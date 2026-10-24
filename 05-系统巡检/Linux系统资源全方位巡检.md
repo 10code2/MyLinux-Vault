@@ -1,3 +1,11 @@
+---
+title: Linux系统资源全方位巡检
+created: 2026-10-14
+updated: 2026-10-24
+status: 待复习
+tags: [巡检, 性能]
+---
+
 
 
 # 笔记1：Linux 系统资源全方位查看（CPU/内存/磁盘/进程/网络）
@@ -211,3 +219,9 @@ top -b -n1
 2. 进程内存不要看 VIRT，要看 RES
 3. 网络端口排查优先 ss，淘汰 netstat
 4. load高不一定CPU忙，可能是IO阻塞
+
+## 🔗 相关笔记
+
+- [[Linux 性能排查：vmstat 与 iostat 完整运维笔记]]
+- [[Shell04 系统监控巡检脚本学习笔记]]
+- [[Linux常见故障排障方法]]

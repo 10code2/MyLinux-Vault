@@ -1,4 +1,11 @@
-# Linux 命令系统实战笔记（零基础 → 面试可背版）
+---
+title: Linux01 命令系统实战笔记
+created: 2026-10-23
+updated: 2026-10-24
+status: 待复习
+tags: [linux, 基础]
+---
+
 
 > 本笔记覆盖：文件查看、查找、权限、进程管理、管道重定向、xargs、文本三剑客（grep/awk/sed）、正则、日志统计实战。
 > 每个命令都标注：**核心作用 / 常用参数 / 高频易错 / 面试考点 / 实用技巧**。
@@ -304,19 +311,19 @@ ps aux | grep nginx # 过滤 nginx 相关进程
 
 **`ps aux` 关键字段**：
 
-| 字段 | 含义 |
-|---|---|
-| USER | 进程所属用户 |
+| 字段      | 含义             |
+| ------- | -------------- |
+| USER    | 进程所属用户         |
 | **PID** | 进程 ID（kill 靠它） |
-| %CPU | CPU 占用率 |
-| %MEM | 内存占用率 |
-| VSZ | 虚拟内存大小 |
-| RSS | 物理内存大小 |
-| TTY | 关联终端 |
-| STAT | 进程状态 |
-| START | 启动时间 |
-| TIME | 累计 CPU 时间 |
-| COMMAND | 启动命令 |
+| %CPU    | CPU 占用率        |
+| %MEM    | 内存占用率          |
+| VSZ     | 虚拟内存大小         |
+| RSS     | 物理内存大小         |
+| TTY     | 关联终端           |
+| STAT    | 进程状态           |
+| START   | 启动时间           |
+| TIME    | 累计 CPU 时间      |
+| COMMAND | 启动命令           |
 
 **STAT 状态码**：
 - R 运行（Running）
@@ -1226,3 +1233,10 @@ sed -E 's/^([0-9]+\.[0-9]+\.[0-9]+\.[0-9]+)/client:\1/' access.log
 
 > 📌 **学习路线总结**：
 > 文件查看(cat/less/head/tail) → 查找(find/which/type/man) → 权限(chmod/chown) → 进程(ps/top/kill/jobs/bg/fg/nohup) → 重定向与管道 → xargs → 文本工具(grep/cut/sort/uniq/tr/wc) → awk → sed → 正则 → 日志实战
+
+## 🔗 相关笔记
+
+- [[Linux02 零基础到文本处理总结]]
+- [[Linux 错题笔记-网络命令]]
+- [[进程和线程]]
+- [[ps 命令完整讲解（运维+面试版）]]

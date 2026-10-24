@@ -1,3 +1,11 @@
+---
+title: Shell 流程控制错题笔记
+created: 2026-10-15
+updated: 2026-10-24
+status: 待复习
+tags: [shell, 脚本]
+---
+
 # Shell 流程控制考核 - 错题笔记
 
 > 考核范围：if 参数校验 / if-elif 多分支 / for 循环 / while 循环 / case 选择 / 综合端口检查
@@ -243,3 +251,7 @@ case "$1" in start) service nginx start ;; *) echo 用法; exit 1 ;; esac
 # 端口存活检查（判断 grep 结果）
 output=$(ss -tlnp | grep ":$port ") && [ -n "$output" ] && echo 监听中
 ```
+
+## 🔗 相关笔记
+
+- [[Shell02 流程控制 复习笔记（bash 运维版）]]

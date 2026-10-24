@@ -1,3 +1,11 @@
+---
+title: nginx-502故障排查笔记
+created: 2026-10-17
+updated: 2026-10-24
+status: 待复习
+tags: [nginx, web服务]
+---
+
 
 
 > 场景：WSL 2 Debian + nginx 1.26.3 反向代理实验
@@ -127,3 +135,9 @@ location /api/ {
 502 = nginx 活着，后端没接住。
 排查顺序：curl 确认 → 看错误日志 → 测后端 → 修。
 ```
+
+## 🔗 相关笔记
+
+- [[nginx-504 排查逻辑]]
+- [[nginx排障复盘]]
+- [[nginx01 综合项目实战笔记]]
