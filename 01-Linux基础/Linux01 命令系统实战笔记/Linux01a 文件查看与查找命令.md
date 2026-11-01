@@ -2,8 +2,10 @@
 title: Linux01a 文件查看与查找命令
 created: 2026-10-16
 updated: 2026-10-24
-status: 待复习
-tags: [linux, 基础]
+status: 已掌握
+tags:
+  - linux
+  - 基础
 ---
 
 > 文件查看（cat/less/head/tail/wc）+ 查找定位（find/which/type/man） · 拆分自 [[Linux01 命令系统实战笔记]]

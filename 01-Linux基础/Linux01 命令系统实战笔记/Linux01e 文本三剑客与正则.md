@@ -3,7 +3,16 @@ title: Linux01e 文本三剑客与正则
 created: 2026-10-16
 updated: 2026-10-24
 status: 待复习
-tags: [linux, 基础]
+tags:
+  - linux
+  - 基础
+slug: linux01e-wen-ben-san-jian-ke-yu-zheng-ze
+cover: ""
+categories: []
+halo:
+  site: http://110.41.63.156:8090
+  name: ec1bb8e0-6402-49b4-a4df-6b366319f647
+  publish: true
 ---
 
 > grep/cut/sort/uniq/tr + awk 详解 + sed 详解 + 正则表达式 · 拆分自 [[Linux01 命令系统实战笔记]]

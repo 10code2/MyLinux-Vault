@@ -118,6 +118,7 @@ ps aux --sort=-rss | head -6
 ```
 
 > 说明：`--sort=-xxx` 降序，`--sort=+xxx` 升序；head 取6是包含标题行
+> [[ps aux 实操案例笔记一]]
 
 ### 2. 自定义输出字段（脚本采集专用）
 
@@ -206,3 +207,4 @@ ps aux --sort=-rss | awk 'NR==2{print $11}'
 - [[进程和线程]]
 - [[Linux01 命令系统实战笔记]]
 - [[Linux系统资源全方位巡检]]
+- [[ps aux 实操案例笔记一]]

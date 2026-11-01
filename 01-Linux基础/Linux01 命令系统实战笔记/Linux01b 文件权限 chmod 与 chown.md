@@ -2,8 +2,10 @@
 title: Linux01b 文件权限 chmod 与 chown
 created: 2026-10-16
 updated: 2026-10-24
-status: 待复习
-tags: [linux, 基础]
+status: 已掌握
+tags:
+  - linux
+  - 基础
 ---
 
 > 权限模型 + chmod/chown 实战 · 拆分自 [[Linux01 命令系统实战笔记]]
